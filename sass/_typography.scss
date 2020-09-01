@@ -1,0 +1,79 @@
+%btn {
+	font-size: 1.3rem;
+	font-weight: 400;
+	padding: 1.2rem 3rem;
+	border-radius: 15rem;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	outline: none;
+	transition: background-color .2s;
+
+	&:active {
+		transform: translateY(.2rem);
+	}
+
+	@media only screen and (max-width: $small) {
+		font-size: 1.6rem;
+		padding: 1.6rem 10rem;
+	}
+}
+
+.paragraph-footer {
+	font-size: 1.5rem;
+}
+
+.heading-1 {
+	font-size: 4rem;
+	color: #000;
+}
+.heading-2 {
+	font-size: 3rem;
+	color: #000;
+}
+.heading-3 {
+	font-size: 1.9rem;
+	color: #000;
+}
+
+.mb-sm {
+	margin-bottom: 1rem;
+}
+
+.mb-md {
+	margin-bottom: 2rem;
+}
+
+.mb-lg {
+	margin-bottom: 4rem;
+}
+.mb-hg {
+	margin-bottom: 7rem;
+}
+
+.btn-1 {
+	@extend %btn;
+	background-color: $color-cyan;
+	border-bottom: 2px solid darken($color-cyan, 10%);
+	box-shadow: 0 .5rem 1.4rem rgba($color-cyan, .3);
+	margin-right: 2rem;
+
+	&:hover {
+		background-color: lighten($color-cyan, 5%);
+	}
+
+	@media only screen and (max-width: $small) {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+}
+.btn-2 {
+	@extend %btn;
+	background-color: $color-blue;
+	border-bottom: 2px solid darken($color-blue, 10%);
+	box-shadow: 0 .6rem 1.3rem rgba($color-blue, .3);
+
+	&:hover {
+		background-color: lighten($color-blue, 5%);
+	}
+}

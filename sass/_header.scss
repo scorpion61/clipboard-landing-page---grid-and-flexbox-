@@ -1,0 +1,22 @@
+.header {
+	@include max-width;
+
+	@media only screen and (max-width: $small) {
+		max-width: 90vw;
+	}
+
+	&__logo {
+		margin-top: 6rem;
+		width: 9rem;
+	}
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+
+	@media only screen and (max-width: $small) {
+		flex-direction: column;
+		align-items: center;
+	}
+}

@@ -1,0 +1,55 @@
+// COLOR VARIABLES
+$color-cyan: hsl(171, 66%, 44%);
+$color-blue: hsl(233, 100%, 69%);
+$color-dark-grayish-blue: hsl(210, 10%, 33%);
+$color-grayish-blue: hsl(201, 11%, 66%);
+
+//MIXINS
+@mixin max-width {
+	max-width: 55ch;
+}
+
+// MEDIA QUERY WIDTHS
+$medium: 54.6875em; // 875px
+$small: 37.5em; // 600px
+$phone: 25em; // 400px
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // 10px/16px = 62.5%  -> 1rem = 10px;
+
+	@media only screen and (max-width: $medium) {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+	color: $color-grayish-blue;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.main-container {
+	min-height: 100vh;
+	max-width: 120rem;
+	box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .15);
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	background: url(../images/bg-header-desktop.png) no-repeat;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	justify-items: center;
+	grid-row-gap: 12rem;
+}

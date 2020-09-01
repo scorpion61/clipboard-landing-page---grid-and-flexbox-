@@ -1,0 +1,37 @@
+.items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2.6rem;
+
+	@media only screen and (max-width: $medium) {
+		max-width: 80vw;
+	}
+
+	@media only screen and (max-width: $small) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-gap: 4rem;
+	}
+
+	// p {
+	// 	font-size: 1.3rem;
+
+	// 	@media only screen and (max-width: $medium) {
+	// 		font-size: 1.6rem;
+	// 	}
+	// }
+}
+
+.item {
+	@media only screen and (min-width: $medium) {
+		max-width: 24ch;
+	}
+
+	// @media only screen and (max-width: $medium) {
+	// 	max-width: 18ch;
+	// }
+
+	.icon {
+		height: 3rem;
+	}
+}

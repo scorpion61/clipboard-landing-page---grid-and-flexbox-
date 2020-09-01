@@ -1,0 +1,64 @@
+// REDO THIS PART COMPLETELY
+
+.features-1 {
+	display: grid;
+	grid-template-columns: max-content;
+	justify-items: center;
+
+	&__header {
+		@include max-width;
+
+		@media only screen and (max-width: $small) {
+			max-width: 90vw;
+		}
+	}
+
+	&__img {
+		width: 70rem;
+		transform: translateX(-30%);
+
+		@media only screen and (max-width: $small) {
+			width: 95vw;
+			transform: translateX(0);
+		}
+
+		// @media only screen and (max-width: 25em) {
+		// 	width: 90vw;
+		// }
+	}
+}
+.specs-container {
+	grid-column: 1 / -1;
+	display: flex;
+	text-align: left;
+
+	@media only screen and (max-width: $small) {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.specs {
+		margin-left: -12rem;
+		margin-top: 14rem;
+		max-width: 24ch;
+
+		@media only screen and (max-width: $medium) {
+			max-width: 16ch;
+			margin-left: -16rem;
+			margin-top: 3rem;
+		}
+
+		@media only screen and (max-width: $small) {
+			max-width: 30ch;
+			margin: 5rem auto 0 auto;
+		}
+
+		p {
+			font-size: 1.3rem;
+
+			@media only screen and (max-width: $small) {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}

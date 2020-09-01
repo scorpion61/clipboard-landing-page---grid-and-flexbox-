@@ -1,0 +1,356 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 54.6875em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #9fabb2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.main-container {
+  min-height: 100vh;
+  max-width: 120rem;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  background: url(../images/bg-header-desktop.png) no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  grid-row-gap: 12rem;
+}
+
+.header {
+  max-width: 55ch;
+}
+@media only screen and (max-width: 37.5em) {
+  .header {
+    max-width: 90vw;
+  }
+}
+.header__logo {
+  margin-top: 6rem;
+  width: 9rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn-2, .btn-1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1.2rem 3rem;
+  border-radius: 15rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  transition: background-color 0.2s;
+}
+.btn-2:active, .btn-1:active {
+  transform: translateY(0.2rem);
+}
+@media only screen and (max-width: 37.5em) {
+  .btn-2, .btn-1 {
+    font-size: 1.6rem;
+    padding: 1.6rem 10rem;
+  }
+}
+
+.paragraph-footer {
+  font-size: 1.5rem;
+}
+
+.heading-1 {
+  font-size: 4rem;
+  color: #000;
+}
+
+.heading-2 {
+  font-size: 3rem;
+  color: #000;
+}
+
+.heading-3 {
+  font-size: 1.9rem;
+  color: #000;
+}
+
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.mb-md {
+  margin-bottom: 2rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 7rem;
+}
+
+.btn-1 {
+  background-color: #26baa4;
+  border-bottom: 2px solid #1d907f;
+  box-shadow: 0 0.5rem 1.4rem rgba(38, 186, 164, 0.3);
+  margin-right: 2rem;
+}
+.btn-1:hover {
+  background-color: #2acfb7;
+}
+@media only screen and (max-width: 37.5em) {
+  .btn-1 {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.btn-2 {
+  background-color: #6173ff;
+  border-bottom: 2px solid #2e46ff;
+  box-shadow: 0 0.6rem 1.3rem rgba(97, 115, 255, 0.3);
+}
+.btn-2:hover {
+  background-color: #7a8aff;
+}
+
+.features-1 {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-items: center;
+}
+.features-1__header {
+  max-width: 55ch;
+}
+@media only screen and (max-width: 37.5em) {
+  .features-1__header {
+    max-width: 90vw;
+  }
+}
+.features-1__img {
+  width: 70rem;
+  transform: translateX(-30%);
+}
+@media only screen and (max-width: 37.5em) {
+  .features-1__img {
+    width: 95vw;
+    transform: translateX(0);
+  }
+}
+
+.specs-container {
+  grid-column: 1/-1;
+  display: flex;
+  text-align: left;
+}
+@media only screen and (max-width: 37.5em) {
+  .specs-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.specs-container .specs {
+  margin-left: -12rem;
+  margin-top: 14rem;
+  max-width: 24ch;
+}
+@media only screen and (max-width: 54.6875em) {
+  .specs-container .specs {
+    max-width: 16ch;
+    margin-left: -16rem;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .specs-container .specs {
+    max-width: 30ch;
+    margin: 5rem auto 0 auto;
+  }
+}
+.specs-container .specs p {
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .specs-container .specs p {
+    font-size: 1.8rem;
+  }
+}
+
+.features-2 {
+  max-width: 55ch;
+}
+@media only screen and (max-width: 37.5em) {
+  .features-2, .features-2 > * {
+    max-width: 90vw;
+  }
+}
+.features-2__img {
+  width: 55rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.6rem;
+}
+@media only screen and (max-width: 54.6875em) {
+  .items {
+    max-width: 80vw;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 4rem;
+  }
+}
+
+@media only screen and (min-width: 54.6875em) {
+  .item {
+    max-width: 24ch;
+  }
+}
+.item .icon {
+  height: 3rem;
+}
+
+.download {
+  max-width: 55ch;
+}
+@media only screen and (max-width: 37.5em) {
+  .download {
+    max-width: 90vw;
+  }
+}
+
+.references {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8rem;
+  align-items: center;
+}
+@media only screen and (max-width: 54.6875em) {
+  .references {
+    grid-gap: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .references {
+    grid-template-columns: 1fr;
+    grid-gap: 8rem;
+  }
+}
+.references__logo {
+  width: 11rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .references__logo {
+    width: 90%;
+  }
+}
+
+.footer {
+  text-align: left;
+  line-height: 2;
+  width: 100vw;
+  background-color: whitesmoke;
+  color: #4c545d;
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 10rem;
+  justify-content: center;
+}
+@media only screen and (max-width: 54.6875em) {
+  .footer {
+    grid-gap: 4.5rem;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    text-align: center;
+    font-size: 2.2rem;
+    grid-template-columns: max-content;
+    line-height: 2.75;
+    grid-gap: 0;
+    grid-template-rows: 12rem 1fr 1fr 10rem max-content;
+  }
+}
+.footer__logo {
+  width: 4rem;
+  align-self: center;
+  justify-self: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__logo {
+    width: 8rem;
+    align-self: start;
+  }
+}
+.footer a:link,
+.footer a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #26baa4;
+}
+
+.media-nav {
+  align-self: center;
+}
+.media-nav__icon:not(:last-child) {
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .media-nav__icon:not(:last-child) {
+    margin-right: 4.5rem;
+  }
+}
+
+.footer-secondary {
+  text-align: center;
+  margin: 2.5rem auto;
+}
+.footer-secondary p {
+  font-size: 1.6rem;
+}
+.footer-secondary a:link,
+.footer-secondary a:visited {
+  text-decoration: none;
+  color: orangered;
+}
+
+/*# sourceMappingURL=style.css.map */

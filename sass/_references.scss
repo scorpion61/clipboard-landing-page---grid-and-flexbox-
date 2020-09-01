@@ -1,0 +1,23 @@
+.references {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 8rem;
+	align-items: center;
+
+	@media only screen and (max-width: $medium) {
+		grid-gap: 4rem;
+	}
+
+	@media only screen and (max-width: $small) {
+		grid-template-columns: 1fr;
+		grid-gap: 8rem;
+	}
+
+	&__logo {
+		width: 11rem;
+
+		@media only screen and (max-width: $small) {
+			width: 90%;
+		}
+	}
+}
